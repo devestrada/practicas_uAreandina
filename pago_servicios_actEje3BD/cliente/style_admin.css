@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #1BA0F2;
+    --sec-color: #CE2424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.cabecera {
+    width: 100%;
+    padding: 20px 50px;
+    background: var(--main-color);
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+}
+/*cliente*/
+.cliente,
+.editar-cliente {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cliente h2,
+.editar-cliente h2 {
+    margin: 20px 0 5px 0;
+    color: var(--main-color);
+}
+
+.cliente form,
+.editar-cliente form {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.cliente form div,
+.editar-cliente form div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cliente form label,
+.editar-cliente form label {
+    margin: 15px 0 5px 0;
+}
+
+.cliente form label::after,
+.editar-cliente form label::after {
+    content: "*";
+    margin-left: 5px;
+    color: var(--sec-color);
+}
+
+.cliente form input,
+.cliente form select,
+.editar-cliente form input,
+.editar-cliente form select {
+    height: 35px;
+    width: 90%;
+    padding: 5px;
+}
+
+.cliente form button,
+.editar-cliente form button {
+    height: 35px;
+    width: 90%;
+    padding: 5px;
+    margin: 15px 0 5px 0;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.cliente form button:hover,
+.editar-cliente form button:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.cliente form a {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    display: block;
+    padding: 15px;
+    margin: 15px 0 5px 0;
+    cursor: pointer;
+    background: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+/*Ver clientes*/
+.ver-cliente {
+    display: none;
+}
+
+.ver-cliente.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    overflow-y: scroll;
+    background: #fff;
+}
+
+.ver-cliente.active .atras {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: var(--main-color);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ver-cliente.active table {
+    padding: 10px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+}
+
+.ver-cliente.active table th {
+    padding: 10px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.ver-cliente.active table td {
+    padding: 6px;
+    border-bottom: 1px solid #cecece;
+}
+
+.ver-cliente.active table a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.ver-cliente.active table a.eliminar {
+    background: #ce0808;
+}
+
+.ver-cliente.active table a.editar {
+    background: #0563df;
+}
+/*Pie*/
+.pie {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 50px;
+    border-top: 2px solid var(--main-color);
+    font-family: 'Karla', sans-serif;
+}

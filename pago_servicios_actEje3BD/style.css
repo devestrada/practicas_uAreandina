@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #1BA0F2;
+    --sec-color: #08b925;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+}
+
+.cabecera {
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    background: var(--sec-color);
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+}
+
+.cabecera .link {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.cabecera a {
+    text-decoration: none;
+    color: var(--sec-color);
+    background: #fff;
+    padding: 10px 5px;
+}
+/*busqueda*/
+.busqueda {
+    position: relative;
+    width: 40%;
+    height: 60vh;
+}
+
+.busqueda h2 {
+    margin: 20px 0 5px 0;
+    color: var(--sec-color);
+}
+
+.busqueda form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.busqueda form label{
+    margin: 15px 0 5px 0;
+}
+
+.busqueda form input,
+.busqueda form select{
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+}
+
+.busqueda form button {
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0 5px 0;
+    cursor: pointer;
+    border: 2px solid var(--sec-color);
+    font-weight: 500;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.busqueda form button:hover {
+    background: var(--sec-color);
+    color: #fff;
+}
+
+.ver-factura h2 {
+    margin-bottom: 20px;
+    color: var(--sec-color);
+}
+
+.ver-factura table {
+    padding: 10px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+}
+
+.ver-factura table th {
+    padding: 10px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.ver-factura table td {
+    padding: 6px;
+    border-bottom: 1px solid #cecece;
+}
+
+.ver-factura table a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.ver-factura table a.pagar {
+    background: var(--sec-color);
+}
+/*ver factura*/
+.ver-factura {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/*Pago*/
+.pago {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+}
+.pago a {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: var(--sec-color);
+}
+/*Pie*/
+.pie {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 50px;
+    border-top: 2px solid var(--sec-color);
+    font-family: 'Karla', sans-serif;
+}
